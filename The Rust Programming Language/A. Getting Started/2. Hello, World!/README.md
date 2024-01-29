@@ -13,7 +13,9 @@ fn main(){
 '''
 
 save the file 
+
 $ rustc main.rc
+
 $ ./main
 
 -> Hello, World!
