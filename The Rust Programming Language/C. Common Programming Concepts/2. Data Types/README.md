@@ -43,3 +43,30 @@ Number literals can also use an underscore as a visual separator to make number 
 -------------
 
 The primary situation in which you'd use isize & usize is when indexing some kind of collection.
+
+---------------
+
+### Floating-Point Type:
+
+Rust's floating point types are f32 and f64, which are 32-bit and 64-bit in size.
+The default type is f64 because of modern CPUs, it is roughly same speed as f32 but is capable of more precision.
+
+---------------
+
+All floating point numbers are signed
+
+------------
+
+Eg.
+
+'''
+fn main(){
+	let x = 2.0; // f64
+	let y : f32 = 3.0; //f32
+}
+'''
+
+-------------
+
+Floating point numbers are represented according to IEEE-754 standard.
+f32 is a single-precision float and f64 is a double precision float.
