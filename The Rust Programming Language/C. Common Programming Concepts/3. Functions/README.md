@@ -78,17 +78,20 @@ Calling a function, calling a macro, a new scope block created with curly bracke
 Eg.
 
 '''
+
 fn main(){
 
   let y = {
   
-    let x = 3;
+   let x = 3;
     
-    x + 1
+   x + 1
     
   };
   
-  prinln!("{y}");
+}
+
+println!("{y}");
   
 }
 '''
@@ -97,9 +100,9 @@ The expression
 
 {
 
-  let x = 3;
+let x = 3;
   
-  x + 1
+x + 1
   
 }
 evaluates to 4. That gets bound to y as part of "let" statement.
