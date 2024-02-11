@@ -6,13 +6,19 @@ Eg.
 
 '''
 fn main(){
+
   println!("hello");
+  
   another_function();
+  
 }
 
 fn another_function(){
+
   println!("another");
+  
 }
+
 '''
 
 ----------------
@@ -29,11 +35,15 @@ Eg.
 
 '''
 fn main(){
+
   func(5);
+
 }
 
 fn func(x: i32){
+
   println!("{x}");
+
 }
 
 '''
@@ -69,19 +79,28 @@ Eg.
 
 '''
 fn main(){
+
   let y = {
+  
     let x = 3;
+    
     x + 1
+    
   };
+  
   prinln!("{y}");
+  
 }
 '''
 
 The expression
 
 {
+
   let x = 3;
+  
   x + 1
+  
 }
 evaluates to 4. That gets bound to y as part of "let" statement.
 
@@ -90,4 +109,50 @@ Expressions do not include ending semicolons.
 -------------
 
 ## Functions with Return Values:
+
+Functions can return values to the code that calls them.
+
+Eg.
+
+'''
+fn five(){
+
+  5
+  
+}
+
+fn main(){
+
+  let x = five();
+
+  println!("{x}"};
+
+}
+
+'''
+
+Eg. 
+
+'''
+fn main(){
+
+  let x = plus_one(5);
+
+  println!("{x}"};
+
+}
+
+fn plus_one(x: i32) -> i32{
+
+  x + 1
+
+}
+
+'''
+
+----------------
+
+If we place a semicolon at end of "x + 1", changing it from expression to statement, we'll get an error.
+
+----------------
 
