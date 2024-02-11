@@ -1,4 +1,4 @@
-# Control floew
+# Control flow
 
 The ability to run some code based on whether a condition is _true_ and to run some code repeatedly while a condition is _true_ are basic building blocks in most programming languages. The most common consructs that let you control the flow of execution of Rust code are _if_ expressions and _loops_.
 
